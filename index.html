@@ -9,9 +9,15 @@
 </head>
 <body>
 <div class="container">
-    <h2>Weather Search</h2>
-    <label for="cityInput"></label><input type="text" id="cityInput" placeholder="Enter city name">
-    <button id="searchBtn" onclick="getWeather()">Search</button>
+    <div class="flex title">
+        <h2>Weather Search</h2>
+        <button id="toggleTempBtn">°F</button>
+    </div>
+
+    <div class="flex">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="searchBtn">Search</button>
+    </div>
 
     <div id="weatherResult"></div>
 </div>
